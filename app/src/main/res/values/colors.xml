@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="windowBackground">#EEEEEE</color>
+
+    <color name="emoji_happy">#FAE53F</color>
+    <color name="emoji_neutral">#B6B6B6</color>
+    <color name="emoji_sad">#0B2BE9</color>
+</resources>

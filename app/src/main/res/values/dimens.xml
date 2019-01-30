@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tweet_card_padding">2dp</dimen>
+    <dimen name="tweet_card_elevation">2dp</dimen>
+    <dimen name="tweet_card_corners">2dp</dimen>
+    <dimen name="tweet_card_margin">6dp</dimen>
+
+    <dimen name="sentiment_emoji">80sp</dimen>
+</resources>

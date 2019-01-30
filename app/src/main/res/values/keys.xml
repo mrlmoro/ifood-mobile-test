@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="twitter_consumer_key">dp83JgtAmH6KeTAgHGCE1yUdH</string>
+    <string name="twitter_consumer_secret_key">lgQPBCOxyMWzs8WSrDkIkDPuY1DwZplkm6dARIqeMKnHJeBJA6</string>
+
+    <string name="preference_name">TweetLikesCache</string>
+
+    <string name="database_name">TweetLikesDb</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="vm"
+                  type="br.com.murilomoro.tweetlikes.presentation.TwitterTweetsViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+                android:id="@+id/view_background"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:backgroundColorId="@{vm.currentBackgroundColor}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="@{vm.tweetSentiment != null ? vm.tweetSentiment.name : @string/analyzing}"
+                android:textColor="@android:color/white"
+                android:saveEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view_background"
+                app:layout_constraintBottom_toBottomOf="@+id/view_background"
+                app:layout_constraintVertical_bias="0.08"
+                app:blinkAnimation="@{vm.showSentimentLoading}"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sentiment_emoji"
+                android:text="@{vm.tweetSentiment.emoji}"
+                tools:text="😃"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                app:layout_constraintBottom_toBottomOf="@+id/view_background"
+                app:show="@{!vm.showSentimentLoading}"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

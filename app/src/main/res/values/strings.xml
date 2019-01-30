@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TweetLikes</string>
+
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="username_empty_tweets">Username does not have tweets posted</string>
+    <string name="username_not_found">Username not found</string>
+    <string name="search">Search</string>
+    <string name="analyzing">Analyzing…</string>
+</resources>

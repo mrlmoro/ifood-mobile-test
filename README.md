@@ -7,12 +7,16 @@ Create an app that given an Twitter username it will list user's tweets. When I 
 * Sad Tweet: We want a blue color on screen with a 😔 emoji
 * For the first release we will only support english language
 
-### Hints
-* You may use Twitter's oficial API (https://developer.twitter.com) to fetch user's tweets 
-* Google's Natural Language API (https://cloud.google.com/natural-language/) may help you with sentimental analysis.
+## Implementation details
 
-## Non functional requirements
-* As this app will be a worldwide success, it must be prepared to be fault tolerant, responsive and resilient.
-* Use whatever language, tools and frameworks you feel comfortable to.
-* Briefly elaborate on your solution, architecture details, choice of patterns and frameworks.
-* Fork this repository and submit your code.
+* Kotlin 😃
+* MVVM clean architecture (Presentation, Domain and Data layers)
+* Reactive programming with RxKotlin easily manage threads and layers communication
+* Dependency injection with Koin to have clean code and testable class
+* Room database to persist tweet analyzes
+* SharedPreferences to cache user name searched
+* Retrofit to fetch tweets on server
+* Twitter API to list tweets with official views and reuse oauth implementation
+* Google API to implement Natural language
+* Mockito and Robolectric to unit and integration tests
+* Databinding and LiveData to observable communication

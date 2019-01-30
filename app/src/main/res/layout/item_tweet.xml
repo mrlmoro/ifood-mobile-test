@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.murilomoro.tweetlikes.ui.widgets.CustomCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_tweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tweet_card_margin"
+        app:contentPaddingTop="@dimen/tweet_card_padding"
+        app:contentPaddingBottom="@dimen/tweet_card_padding"
+        app:cardElevation="@dimen/tweet_card_elevation"
+        app:cardCornerRadius="@dimen/tweet_card_corners"
+        app:cardBackgroundColor="@color/colorAccent"/>
