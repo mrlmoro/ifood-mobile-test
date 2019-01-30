@@ -6,3 +6,4 @@ local.properties
 .DS_Store
 build/
 .externalNativeBuild
+google_credential.json
